@@ -3,7 +3,7 @@ services:
    app:
       container_name: applibros
       ports:
-         - "8090:8090"
+         - "8080:8080"
       build: .
       restart: unless-stopped
       links:
