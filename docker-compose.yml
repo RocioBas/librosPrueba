@@ -10,11 +10,12 @@ services:
          - mymongodb
       volumes:
          - .:/usr/src/app
-   mymongodb:
+   mymongodb: 
       container_name: mymongodatabase
       image: mongo
-      ports:
+      ports: 
          - "27018:27017"
       restart: unless-stopped
-      volumes:
+      volumes: 
          - ../data:/data/db
+
