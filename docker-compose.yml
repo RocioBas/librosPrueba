@@ -10,7 +10,6 @@ services:
       volumes:
          - .:/usr/src/app
    mymongodb: 
-      container_name: mymongodatabase
       image: mongo
       ports: 
          - "27018:27017"
